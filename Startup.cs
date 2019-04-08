@@ -13,6 +13,7 @@ using Microsoft.EntityFrameworkCore;
 using PrjBiblioteca.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using PrjBiblioteca.Dados;
 
 namespace PrjBiblioteca
 {
@@ -38,9 +39,12 @@ namespace PrjBiblioteca
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlite(
                     Configuration.GetConnectionString("DefaultConnection")));
+
             services.AddDefaultIdentity<IdentityUser>()
                 .AddDefaultUI(UIFramework.Bootstrap4)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+
+            services.AddDbContext<BibliotecaDbContext>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
