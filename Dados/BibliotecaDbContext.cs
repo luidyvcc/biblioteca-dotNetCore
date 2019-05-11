@@ -80,7 +80,10 @@ namespace PrjBiblioteca.Dados
         public DbSet<PrjBiblioteca.Models.Livro> Livro { get; set; }
         public DbSet<PrjBiblioteca.Models.Usuario> Usuario { get; set; }
         public DbSet<PrjBiblioteca.Models.Sistema> Sistema { get; set; }
+        public DbSet<PrjBiblioteca.Models.SistemaUsuario> SistemaUsuario { get; set; }
         public DbSet<PrjBiblioteca.Models.Autor> Autor { get; set; }
+        public DbSet<PrjBiblioteca.Models.LivroAutor> LivroAutor { get; set; }
         public DbSet<PrjBiblioteca.Models.Emprestimo> Emprestimo { get; set; }
+        public DbSet<PrjBiblioteca.Models.LivroEmprestimo> LivroEmprestimo { get; set; }
     }
 }

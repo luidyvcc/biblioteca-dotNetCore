@@ -9,11 +9,32 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+
+<form asp-action="Index" method="post">
+    <div class="form-actions no-color">
+        <p>
+            @Html.DisplayNameFor(model => model.Titulo):&nbsp;
+            <input type="text" name="filtroPesquisa" value="@ViewBag.filtroPesquisa" />
+
+            @Html.DisplayNameFor(model => model.Quantidade):&nbsp;
+            <input type="number" name="filtroQtdInicio" value="@ViewBag.filtroQtdInicio" />
+
+            @Html.DisplayNameFor(model => model.Quantidade):&nbsp;
+            <input type="number" name="filtroQtdFim" value="@ViewBag.filtroQtdFim" />
+
+            <input type="submit" value="Pesquisar" class="btn btn-success btn-sm" />
+            <a asp-action="Index" class="btn btn-danger btn-sm">Limpar</a>
+        </p>
+    </div>
+</form>
+
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Titulo)
+                <a asp-action="Index" asp-route-ordenacao="@ViewBag.TituloSortParam">
+                    @Html.DisplayNameFor(model => model.Titulo)
+                </a>
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Quantidade)
@@ -22,20 +43,20 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Titulo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Quantidade)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.LivroId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.LivroId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.LivroId">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Titulo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Quantidade)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.LivroId">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.LivroId">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.LivroId">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
