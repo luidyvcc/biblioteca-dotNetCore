@@ -38,3 +38,13 @@ D:\Documents\Cursos\FIB\Engenharia_de_Software\dot_net_avancado\projetos\PrjBibl
 D:\Documents\Cursos\FIB\Engenharia_de_Software\dot_net_avancado\projetos\PrjBiblioteca\obj\Debug\netcoreapp2.2\PrjBiblioteca.dll
 D:\Documents\Cursos\FIB\Engenharia_de_Software\dot_net_avancado\projetos\PrjBiblioteca\obj\Debug\netcoreapp2.2\PrjBiblioteca.pdb
 D:\Documents\Cursos\FIB\Engenharia_de_Software\dot_net_avancado\projetos\PrjBiblioteca\obj\Debug\netcoreapp2.2\PrjBiblioteca.csproj.CopyComplete
+D:\Documents\Cursos\FIB\Engenharia_de_Software\dot_net_avancado\projetos\PrjBiblioteca\obj\Debug\netcoreapp2.2\Razor\Views\Autores\Create.g.cshtml.cs
+D:\Documents\Cursos\FIB\Engenharia_de_Software\dot_net_avancado\projetos\PrjBiblioteca\obj\Debug\netcoreapp2.2\Razor\Views\Autores\Delete.g.cshtml.cs
+D:\Documents\Cursos\FIB\Engenharia_de_Software\dot_net_avancado\projetos\PrjBiblioteca\obj\Debug\netcoreapp2.2\Razor\Views\Autores\Details.g.cshtml.cs
+D:\Documents\Cursos\FIB\Engenharia_de_Software\dot_net_avancado\projetos\PrjBiblioteca\obj\Debug\netcoreapp2.2\Razor\Views\Autores\Edit.g.cshtml.cs
+D:\Documents\Cursos\FIB\Engenharia_de_Software\dot_net_avancado\projetos\PrjBiblioteca\obj\Debug\netcoreapp2.2\Razor\Views\Autores\Index.g.cshtml.cs
+D:\Documents\Cursos\FIB\Engenharia_de_Software\dot_net_avancado\projetos\PrjBiblioteca\obj\Debug\netcoreapp2.2\Razor\Views\Emprestimos\Create.g.cshtml.cs
+D:\Documents\Cursos\FIB\Engenharia_de_Software\dot_net_avancado\projetos\PrjBiblioteca\obj\Debug\netcoreapp2.2\Razor\Views\Emprestimos\Delete.g.cshtml.cs
+D:\Documents\Cursos\FIB\Engenharia_de_Software\dot_net_avancado\projetos\PrjBiblioteca\obj\Debug\netcoreapp2.2\Razor\Views\Emprestimos\Details.g.cshtml.cs
+D:\Documents\Cursos\FIB\Engenharia_de_Software\dot_net_avancado\projetos\PrjBiblioteca\obj\Debug\netcoreapp2.2\Razor\Views\Emprestimos\Edit.g.cshtml.cs
+D:\Documents\Cursos\FIB\Engenharia_de_Software\dot_net_avancado\projetos\PrjBiblioteca\obj\Debug\netcoreapp2.2\Razor\Views\Emprestimos\Index.g.cshtml.cs

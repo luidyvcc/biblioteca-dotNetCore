@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.Collections.Generic;
 
 namespace PrjBiblioteca.Models
 {
@@ -14,6 +15,9 @@ namespace PrjBiblioteca.Models
 
         [Range(1, 300, ErrorMessage = "O campo {0} deve estar entre {1} e {2}")]
         public int Quantidade { get; set; }
+
+        public ICollection<LivroAutor> LivroAutores { get; set; }
+        public ICollection<LivroEmprestimo> LivroEmprestimos { get; set; }
 
     }
 }

@@ -2764,8 +2764,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Autores\\Edit.cshtml",
+      "TargetPath": "Views\\Autores\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Livros\\Index.cshtml",
       "TargetPath": "Views\\Livros\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Emprestimos\\Create.cshtml",
+      "TargetPath": "Views\\Emprestimos\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -2774,13 +2784,38 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Autores\\Delete.cshtml",
+      "TargetPath": "Views\\Autores\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Autores\\Create.cshtml",
+      "TargetPath": "Views\\Autores\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Emprestimos\\Delete.cshtml",
+      "TargetPath": "Views\\Emprestimos\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Autores\\Details.cshtml",
+      "TargetPath": "Views\\Autores\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Emprestimos\\Index.cshtml",
+      "TargetPath": "Views\\Emprestimos\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -2796,6 +2831,11 @@
     {
       "FilePath": "Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Emprestimos\\Edit.cshtml",
+      "TargetPath": "Views\\Emprestimos\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -2824,6 +2864,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Autores\\Index.cshtml",
+      "TargetPath": "Views\\Autores\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Shared\\_LoginPartial.cshtml",
       "TargetPath": "Views\\Shared\\_LoginPartial.cshtml",
       "FileKind": "mvc"
@@ -2841,6 +2886,11 @@
     {
       "FilePath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Emprestimos\\Details.cshtml",
+      "TargetPath": "Views\\Emprestimos\\Details.cshtml",
       "FileKind": "mvc"
     }
   ]
