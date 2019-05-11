@@ -1,0 +1,29 @@
+@model IEnumerable<PrjBiblioteca.Models.Livro>
+
+@{
+    Layout = null;
+}
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-4">
+            <div class="card" style="width: 20rem;">
+
+                @*<img class="card-img-top" src="~/Imagens/Produtos/@item.Foto">*@
+                
+                <div class="card-header">
+                    @item.Titulo
+                </div>
+
+                <div class="card-body">
+                    <p class="card-text">Quantidade: @item.Quantidade</p>
+                </div>
+
+                <div class="card-footer text-muted">
+                    <a asp-area="" asp-controller="Carrinho" aspaction="Adicionar" asp-route-id="@item.LivroId" class="card-link">Add ao Carrinho</a>
+                </div>
+            </div>
+    </div>
+}
+</div>

@@ -46,6 +46,10 @@ namespace PrjBiblioteca
 
             services.AddDbContext<BibliotecaDbContext>();
 
+            services.AddMvc();
+            services.AddDistributedMemoryCache();
+            services.AddSession();
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
@@ -66,6 +70,7 @@ namespace PrjBiblioteca
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            app.UseSession();
             app.UseCookiePolicy();
 
             app.UseAuthentication();

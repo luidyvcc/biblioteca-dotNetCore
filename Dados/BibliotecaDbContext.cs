@@ -85,5 +85,6 @@ namespace PrjBiblioteca.Dados
         public DbSet<PrjBiblioteca.Models.LivroAutor> LivroAutor { get; set; }
         public DbSet<PrjBiblioteca.Models.Emprestimo> Emprestimo { get; set; }
         public DbSet<PrjBiblioteca.Models.LivroEmprestimo> LivroEmprestimo { get; set; }
+        public DbSet<PrjBiblioteca.Models.Categoria> Categoria { get; set; }
     }
 }
