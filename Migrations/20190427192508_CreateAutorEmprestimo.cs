@@ -26,7 +26,7 @@ namespace PrjBiblioteca.Migrations
                 {
                     EmprestimoID = table.Column<int>(nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    Nome = table.Column<string>(maxLength: 100, nullable: true),
+                    //Nome = table.Column<string>(maxLength: 100, nullable: true),
                     UsuarioID = table.Column<int>(nullable: false),
                     DataInicio = table.Column<DateTime>(nullable: false),
                     DataFim = table.Column<DateTime>(nullable: false),
