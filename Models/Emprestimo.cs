@@ -25,7 +25,7 @@ namespace PrjBiblioteca.Models
         [Display(Name = "Data de devolução")]
         [DataType(DataType.Date, ErrorMessage="Data com formato inválido!")]
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)] 
-        public DateTime DataDevolucao { get; set; }
+        public DateTime? DataDevolucao { get; set; }
 
         public ICollection<LivroEmprestimo> EmprestimoLivros { get; set; }
     }

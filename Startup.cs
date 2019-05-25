@@ -14,6 +14,7 @@ using PrjBiblioteca.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using PrjBiblioteca.Dados;
+using PrjBiblioteca.Services;
 
 namespace PrjBiblioteca
 {
@@ -49,6 +50,9 @@ namespace PrjBiblioteca
             services.AddMvc();
             services.AddDistributedMemoryCache();
             services.AddSession();
+
+            // Add application services.
+            services.AddTransient<IServicoLogin, ServicoLogin>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }

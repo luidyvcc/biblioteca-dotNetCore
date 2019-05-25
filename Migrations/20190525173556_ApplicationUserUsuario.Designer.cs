@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PrjBiblioteca.Dados;
 
 namespace PrjBiblioteca.Migrations
 {
     [DbContext(typeof(BibliotecaDbContext))]
-    partial class BibliotecaDbContextModelSnapshot : ModelSnapshot
+    [Migration("20190525173556_ApplicationUserUsuario")]
+    partial class ApplicationUserUsuario
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -48,11 +50,13 @@ namespace PrjBiblioteca.Migrations
                     b.Property<int>("EmprestimoID")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<DateTime?>("DataDevolucao");
+                    b.Property<DateTime>("DataDevolucao");
 
                     b.Property<DateTime>("DataFim");
 
                     b.Property<DateTime>("DataInicio");
+
+                    b.Property<string>("Nome");
 
                     b.Property<int>("UsuarioID");
 

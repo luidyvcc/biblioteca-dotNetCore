@@ -1,4 +1,4 @@
-@model IEnumerable<PrjBiblioteca.Models.Livro>
+@model IEnumerable<PrjBiblioteca.Models.CarrinhoModel>
 
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -18,6 +18,7 @@
             <!-- <th>..</th> -->
             <th>Produto</th>
             <th>Quantidade</th>
+            <th>Ações</th>
         </tr>
     </thead>
     <tbody>
@@ -27,8 +28,47 @@
 
                 <td>@item.Titulo</td>
 
-                <td>@item.Quantidade</td>
+                <td>
+                    <a asp-area="" asp-controller="Carrinho" asp-action="RemoverItem" asp-route-id="@item.LivroId" class="card-link">
+                        <i class="fas fa-minus-square" title="Adicionar quantidade"></i>
+                    </a>
+                    @item.Quantidade
+                    <a asp-area="" asp-controller="Carrinho" asp-action="AdicionarItem" asp-route-id="@item.LivroId" class="card-link">
+                        <i class="fas fa-plus-square" title="Remover quantidade"></i>
+                    </a>
+                </td>
+
+                <td>
+                    <a asp-area="" asp-controller="Carrinho" asp-action="Remover" asp-route-id="@item.LivroId" class="card-link">
+                        <i class="fas fa-trash" title="Remover livro"></i>
+                    </a>
+                </td>
             </tr>
+        }   
+
+        @if (TempData["MsgAlert"] != null)
+        {
+            <br>
+            <div class="alert alert-dismissible @TempData["MsgEstilo"]" role="alert">
+
+                <button type="button" class="close" data-dismiss="alert" arialabel="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>    
+
+                <strong>Aten&ccedil;&atilde;o!!!</strong>&nbsp;@TempData["MsgAlert"]
+                
+            </div>
         }
+
     </tbody>
+
+    <tfoot>
+        <form asp-action="EmprestarLivros">
+            <tr>
+                <td colspan="3">
+                    <input type="submit" value="Concluir" class="btn btn-success" />
+                </td>
+            </tr>
+        </form>
+    </tfoot>
 </table>

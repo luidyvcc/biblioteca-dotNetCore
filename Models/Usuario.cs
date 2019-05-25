@@ -15,5 +15,7 @@ namespace PrjBiblioteca.Models
         public virtual Categoria Categoria { get; set; }
 
         public ICollection<SistemaUsuario> SistUsuarios { get; set; }
+
+        public string ApplicationUserId { get; set; }
     }
 }
